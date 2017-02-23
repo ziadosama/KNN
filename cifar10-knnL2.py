@@ -74,8 +74,9 @@ X_test = np.reshape(X_test, (X_test.shape[0], -1))
 means=[]
 ks =[1,2,3,4,5,7,8,9,10,11,12,13,14,15]
 for i in range(len(ks)):
-	print 'k= %d' % ks[i]
-	means.append(folds(X_train, y_train, ks[i]))
+        ahmed=folds(X_train, y_train, ks[i])
+	means.append(ahmed)
+	print "The mean accuracy for k = ", ks[i] , "is: " ,ahmeds
 
 
 
