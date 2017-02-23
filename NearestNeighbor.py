@@ -15,7 +15,7 @@ class NearestNeighbor(object):
         self.ytr = yin
 
     def predict(self, X, k, l='L1'):
-        if l == 'L1':
+        if l == 'L2':
             ahmed = distance.cdist(X, self.Xtr, 'euclidean')
         else:
             # cityblock is the same as manhattan distance
